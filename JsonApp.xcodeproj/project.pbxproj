@@ -12,6 +12,8 @@
 		FA252B6E2310846C00107786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA252B6C2310846C00107786 /* Main.storyboard */; };
 		FA252B702310847100107786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA252B6F2310847100107786 /* Assets.xcassets */; };
 		FA252B732310847200107786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA252B712310847200107786 /* LaunchScreen.storyboard */; };
+		FA252B8023108AA800107786 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA252B7F23108AA800107786 /* DataViewController.swift */; };
+		FA252B8223108E6000107786 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA252B8123108E6000107786 /* Cocktail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA252B6F2310847100107786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA252B722310847200107786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA252B742310847200107786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA252B7F23108AA800107786 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		FA252B8123108E6000107786 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		FA252B672310846C00107786 /* JsonApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA252B682310846C00107786 /* AppDelegate.swift */,
-				FA252B6A2310846C00107786 /* ViewController.swift */,
-				FA252B6C2310846C00107786 /* Main.storyboard */,
-				FA252B6F2310847100107786 /* Assets.xcassets */,
-				FA252B712310847200107786 /* LaunchScreen.storyboard */,
-				FA252B742310847200107786 /* Info.plist */,
+				FA252B7E2310854300107786 /* Sources */,
+				FA252B7D231084DB00107786 /* Supporting Files */,
+				FA252B7C231084D100107786 /* Model */,
+				FA252B7B231084C700107786 /* View */,
+				FA252B7A231084A300107786 /* Controller */,
 			);
 			path = JsonApp;
+			sourceTree = "<group>";
+		};
+		FA252B7A231084A300107786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA252B6A2310846C00107786 /* ViewController.swift */,
+				FA252B7F23108AA800107786 /* DataViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA252B7B231084C700107786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA252B6C2310846C00107786 /* Main.storyboard */,
+				FA252B712310847200107786 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA252B7C231084D100107786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA252B8123108E6000107786 /* Cocktail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA252B7D231084DB00107786 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA252B742310847200107786 /* Info.plist */,
+				FA252B682310846C00107786 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA252B7E2310854300107786 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA252B6F2310847100107786 /* Assets.xcassets */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA252B6B2310846C00107786 /* ViewController.swift in Sources */,
+				FA252B8023108AA800107786 /* DataViewController.swift in Sources */,
 				FA252B692310846C00107786 /* AppDelegate.swift in Sources */,
+				FA252B8223108E6000107786 /* Cocktail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZW25797D6F;
-				INFOPLIST_FILE = JsonApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JsonApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZW25797D6F;
-				INFOPLIST_FILE = JsonApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JsonApp/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
